@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Horta Inteligente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/default-css.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- page container area start -->
+    <div class="page-container sbar_collapsed">
+      
+        <!-- main content area start -->
+        <div class="main-content">
+            <!-- page title area start -->
+            <div class="page-title-area">
+                <div class="row align-items-center">
+                    <div class="col-sm-4">
+                        <div class="breadcrumbs-area clearfix">
+                            <h4 class="page-title pull-left">Horta Inteligente</h4>
+                            <ul class="breadcrumbs pull-left">
+                                <li><a href="index.html">Dash</a></li>
+                                <li><a href="index.html">Sobre o Projeto</a></li>
+                                <a href="index.html">Sobre o DCMaker</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 clearfix">
+                        <div class="user-profile pull-right">
+                            <img class="avatar user-thumb" src="assets/images/avatar.png" alt="avatar">
+                            <h4 class="user-name dropdown-toggle">DCMaker</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- page title area end -->
+            <div class="main-content-inner">
+                <!-- sales report area start -->
+                <div class="sales-report-area mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <div class="single-report mb-xs-30">
+                                <div class="s-report-inner pr--20 pt--30 mb-3">
+                                    <div class="icon-temp"><img class="icon-image" src="assets/images/temperaturas.png"/></div>
+                                    <div class="s-report-title d-flex justify-content-between">
+                                        <h4 class="header-title mb-0">Temperatura</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-between pb-2">
+                                        <h1>27ºC</h1>
+                                    </div>
+                                </div>
+                                <canvas id="coin_sales1" height="100"></canvas>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            <div class="single-report mb-xs-30">
+                                <div class="s-report-inner pr--20 pt--30 mb-3">
+                                    <div class="icon-umi-ar"><img class="icon-image-umi-ar" src="assets/images/umidade_ar.png"/></div>
+                                    <div class="s-report-title d-flex justify-content-between">
+                                        <h4 class="header-title mb-0">Umidade ar</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-between pb-2">
+                                        <h1>56%</h1>
+                                    </div>
+                                </div>
+                                <canvas id="coin_sales2" height="100"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="single-report">
+                                <div class="s-report-inner pr--20 pt--30 mb-3">
+                                    <div class="icon-umi-solo"><img class="icon-image-umi-solo" src="assets/images/umidade_solo.png"/></div>
+                                    <div class="s-report-title d-flex justify-content-between">
+                                        <h4 class="header-title mb-0">Umidade solo</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-between pb-2">
+                                        <h1>59%</h1>
+                                    </div>
+                                </div>
+                                <canvas id="coin_sales3" height="100"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="single-report">
+                                <div class="s-report-inner pr--20 pt--30 mb-3">
+                                    <div class="icon"><img class="icon-image-chuva" src="assets/images/chuva.png"/></div>
+                                    <div class="s-report-title d-flex justify-content-between">
+                                        <h4 class="header-title mb-0">Chovendo?</h4>
+                                        
+                                    </div>
+                                    <div class="d-flex justify-content-between pb-2">
+                                        <h1>Não</h1>
+                                    </div>
+                                </div>
+                                <canvas id="coin_sales4" height="100"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="single-report">
+                                <div class="s-report-inner pr--20 pt--30 mb-3">
+                                    <div class="icon-lumi"><img class="icon-image-luminosidade" src="assets/images/luminosidade2.png"/></div>
+                                    <div class="s-report-title d-flex justify-content-between">
+                                        <h4 class="header-title mb-0">Luminosidade</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-between pb-2">
+                                        <h1>80%</h1>
+                                    </div>
+                                </div>
+                                <canvas id="coin_sales5" height="100"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <!-- sales report area end -->
+                <!-- overview area start -->
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-xl-10 col-lg-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="header-title mb-0">Últimas 24h</h4>
+                                    
+                                </div>
+                                <div id="verview-shart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                   
+                </div>
+                <!-- overview area end -->
+            </div>
+        </div>
+        <!-- main content area end -->
+        <!-- footer area start-->
+        <footer>
+            <div class="footer-area">
+                <p>© Copyright 2022. All right reserved. By DCMaker.</p>
+            </div>
+        </footer>
+        <!-- footer area end-->
+    </div>
+    <!-- page container area end -->
+    
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+
+    <!-- Chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <!-- Grafico maior -->
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    
+    <!-- Graficos -->
+    <script src="assets/js/line-chart.js"></script>
+    <!-- Outros plugins -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
